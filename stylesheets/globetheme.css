@@ -4,30 +4,39 @@
 }
 
 .jumbotron {
-	background-color:#80bfff;
+	background-color:#002b80;
+	color:#ffffff;
+	 padding: 100px 25px;
 }
 
 #title {
-	font-family:"Sigmar One", sans-serif;
+	font-family:"Oxygen", sans-serif;
 }
 
 p {
 	font-family:'Arimo';
-	font-size: 25px;
+	font-size:25px;
+}
+
+.container-fluid {
+	 padding: 60px 50px;
+}
+
+.container-fluid p{
+	font-family:'Arimo';
+	font-size: 30px;
 }
 
 h1 {
 	font-family: 'Righteous';
 }
 
-.heading-div {
-	width: 55%;
-	background-color: #ff9933;
-	margin-left: -30px;
-	height:85px;
-	padding:5px;
-	padding-left:20px;
-	border:2px solid #cc6600;
-	border-radius: 10px;
-	margin-bottom:15px;
+.logo {
+    font-size: 200px;
+}
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
 }
