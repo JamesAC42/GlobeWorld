@@ -10,3 +10,24 @@
 #title {
 	font-family:"Sigmar One", sans-serif;
 }
+
+p {
+	font-family:'Arimo';
+	font-size: 25px;
+}
+
+h1 {
+	font-family: 'Righteous';
+}
+
+.heading-div {
+	width: 55%;
+	background-color: #ff9933;
+	margin-left: -30px;
+	height:85px;
+	padding:5px;
+	padding-left:20px;
+	border:2px solid #cc6600;
+	border-radius: 10px;
+	margin-bottom:15px;
+}
