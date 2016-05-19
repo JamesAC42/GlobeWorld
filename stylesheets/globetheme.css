@@ -4,9 +4,9 @@
 }
 
 .jumbotron {
-	background-color:#002b80;
+	background-color:#009999;
 	color:#ffffff;
-	 padding: 100px 25px;
+	padding: 100px 25px;
 }
 
 #title {
@@ -15,16 +15,11 @@
 
 p {
 	font-family:'Arimo';
-	font-size:25px;
+	font-size:20px;
 }
 
 .container-fluid {
 	 padding: 60px 50px;
-}
-
-.container-fluid p{
-	font-family:'Arimo';
-	font-size: 30px;
 }
 
 h1 {
@@ -33,10 +28,48 @@ h1 {
 
 .logo {
     font-size: 200px;
+	color: #0099AA;
 }
+
+.logo-small {
+	font-size: 50px;
+	color:#0099AA;
+}
+
 @media screen and (max-width: 768px) {
     .col-sm-4 {
         text-align: center;
         margin: 25px 0;
     }
+}
+
+.gwlogo{
+	float:center;
+	margin-left:50px;
+	width:75%;
+}
+
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #0099AA;
+}
+
+.carousel-indicators li {
+    border-color: #0099AA;
+}
+
+.carousel-indicators li.active {
+    background-color: #0099AA;
+}
+
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+}
+
+.item span {
+    font-style: normal;
 }
