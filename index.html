@@ -5,6 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="stylesheets/globetheme.css">
 		<link rel="stylesheet" href="stylesheets/animate.css">
 		<link href='https://fonts.googleapis.com/css?family=Oxygen:700' rel='stylesheet' type='text/css'>
@@ -15,7 +18,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 		<script src="javascripts/indexanimations.js"></script>
 	</head>
-	<body>
+	<body id="globePage" data-spy="scroll" data-target=".navbar" data-offset="60">
 		<nav class="navbar navbar-default navbar-fixed-top">
 		  <div class="container">
 			<div class="navbar-header">
@@ -29,6 +32,10 @@
 			<div class="collapse navbar-collapse" id="myNavbar">
 			  <ul class="nav navbar-nav navbar-right">
 				<li><a href="#about">ABOUT</a></li>
+				<li><a href="#services">SERVICES</a></li>
+				<li><a href="#deals">DEALS</a></li>
+				<li><a href="#reviews">REVIEWS</a></li>
+				<li><a href="#contact">CONTACT</a></li>
 			  </ul>
 			</div>
 		  </div>
@@ -41,7 +48,7 @@
 				<button type="button" class="btn btn-danger">Subscribe</button>
 			  </form>
 		</div>
-		<div class="container-fluid">
+		<div id="about" class="container-fluid">
 			<div class="row">
 				<div class="col-sm-8">
 					<h2><strong>About Us</strong></h2>
@@ -65,7 +72,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="container-fluid text-center">
+		<div id="services" class="container-fluid text-center">
 			<h2>What's in Store</h2>
 			<br>
 			<div class="row">
@@ -86,41 +93,133 @@
 				</div>
 			</div>
 		</div>
-		<br>
-		<div class="text-center">
-			<h2>What our customers say</h2>
-			<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-			  <!-- Indicators -->
-			  <ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
-			  </ol>
 
-			  <!-- Wrapper for slides -->
-			  <div class="carousel-inner" role="listbox">
-				<div class="item active">
-				<h4>"This company is the best. I am so happy with the result!"<br><span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span></h4>
+		<div id="deals" class="text-center container-fluid">
+			<h2>Today's Deals</h2>
+			<h4>Save over 40% on our newest items. Click to buy.</h4>
+			<br>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<a href="https://camrynforrest.com/2012/11/27/celebrating-snow-globes-on-display/"><img class="img-responsive" src="https://camrynforrestdotcom.files.wordpress.com/2012/11/circular_logic_front.jpg"/></a>
+						<p><strong>Circular Logic Snow Globe</strong></p>
+						
+					</div>
 				</div>
-				<div class="item">
-				  <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<a href="http://www.amazon.com/The-Office-Dwight-Schrute-Bobblehead/dp/B002LCML4S"><img class="img-responsive" src="http://ecx.images-amazon.com/images/I/41w4bhOelQL.jpg"/></a>
+						<p><strong>Dwight Bobble Head</strong></p>
+						
+					</div>
 				</div>
-				<div class="item">
-				  <h4>"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Chandler Bing, Actor, FriendsAlot</span></h4>
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<a href="http://coolsnowglobes.com/collections/all"><img class="img-responsive" src="http://cdn.shopify.com/s/files/1/0452/3097/products/CS248_MOON_Moon_large.jpg?v=1409256192"/></a>
+						<p><strong>Moon Snow Globe</strong></p>
+						
+					</div>
 				</div>
-			  </div>
-
-			  <!-- Left and right controls -->
-			  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			  </a>
-			  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			  </a>
 			</div>
 		</div>
+
+		<div id="reviews" class="container-fluid text-center">
+		  <br>
+		  <h2>What our Customers Think</h2>
+		  <div id="reviewCarousel" class="carousel slide" data-ride="carousel">
+		    <!-- Indicators -->
+		    <ol class="carousel-indicators">
+		      <li data-target="#reviewCarousel" data-slide-to="0" class="active"></li>
+		      <li data-target="#reviewCarousel" data-slide-to="1"></li>
+		      <li data-target="#reviewCarousel" data-slide-to="2"></li>
+		    </ol>
+
+		    <!-- Wrapper for slides -->
+		    <div class="carousel-inner" role="listbox">
+		     	<div class="item active">
+					<h4>"Globe World had everything I was looking for and more! Extremely pleased and will definitely visit again."<br><span style="font-style:normal">Barack Obama, POTUS</span></h4>
+				</div>
+				<div class="item">
+					<h4>"I was delightfully suprised when I discovered a life-size Steve Buscemi bobble head in Globe World! Bought it as soon as possible, love it."<br><span style="font-style:normal">Steve Buscemi, Golden Globe Winner</span></h4>
+				</div>
+				<div class="item">
+					<h4>"It is the apex of all of my novelty needs. I spend hours and hours scrolling through the shop. My wife and family have left me, as all I do is gaze at the beautiful snow globes. I have no job, I have no family, I have no loved ones, but I have Globe World."<br><span style="font-style:normal">An Anonymous Fan</span></h4>
+				</div>
+			</div>
+		    <!-- Left and right controls -->
+		    <a class="left carousel-control" href="#reviewCarousel" role="button" data-slide="prev">
+		      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		      <span class="sr-only">Previous</span>
+		    </a>
+		    <a class="right carousel-control" href="#reviewCarousel" role="button" data-slide="next">
+		      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		      <span class="sr-only">Next</span>
+		    </a>
+		  </div>
+		</div>
+
+		<div id="contact" class="container-fluid bg-grey">
+		  <h2 class="text-center">CONTACT</h2>
+		  <div class="row">
+		    <div class="col-sm-5">
+		      <p>Contact us and we'll get back to you within 24 hours.</p>
+		      <p><span class="glyphicon glyphicon-map-marker"></span>Teec Nos Pos, New Mexico US</p>
+		      <p><span class="glyphicon glyphicon-phone"></span>1111111111</p>
+		      <p><span class="glyphicon glyphicon-envelope"></span> contact@globeworld.xyz</p> 
+		    </div>
+		    <div class="col-sm-7">
+		      <div class="row">
+		        <div class="col-sm-6 form-group">
+		          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+		        </div>
+		        <div class="col-sm-6 form-group">
+		          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+		        </div>
+		      </div>
+		      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+		      <div class="row">
+		        <div class="col-sm-12 form-group">
+		          <button class="btn btn-default pull-right" type="submit">Send</button>
+		        </div>
+		      </div> 
+		    </div>
+		  </div>
+		</div>
+		<!-- Set height and width with CSS -->
+		<div id="googleMap" style="height:400px;width:100%;"></div>
+
+		<!-- Add Google Maps -->
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script>
+			var myCenter = new google.maps.LatLng(36.998723, -109.044644);
+
+			function initialize() {
+			var mapProp = {
+			center:myCenter,
+			zoom:12,
+			scrollwheel:false,
+			draggable:false,
+			mapTypeId:google.maps.MapTypeId.ROADMAP
+			};
+
+			var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+			var marker = new google.maps.Marker({
+			position:myCenter,
+			});
+
+			marker.setMap(map);
+			}
+
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+
+		<footer class="container-fluid text-center">
+		  <a href="#globePage" title="To Top">
+		    <span class="glyphicon glyphicon-chevron-up"></span>
+		  </a>
+		  <p>Bootstrap Theme Made By <a href="http://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p> 
+		</footer>
 	</body>
 </html>
 
